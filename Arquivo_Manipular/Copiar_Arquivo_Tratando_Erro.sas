@@ -3,6 +3,7 @@
 %let Origem = /sas/Pasta_A;
 %let Destino = /sas/Pasta_B;
 
+
 data _null_;
 	/*****  USA O COMANDO CD PARA ACESSAR A PASTA  *****/
     /***** USE THE CD COMMAND TO ACCESS THE FOLDER *****/    
