@@ -1,2 +1,2 @@
 # SAS_Dicas
- Dicas de comando em SAS.
+ Dicas de comando em SAS (Commands tips in SAS).
