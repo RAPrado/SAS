@@ -1,3 +1,6 @@
+/*****      RENOMEIA UM ARQUIVO       *****/
+/*****         RENAME A FILE          *****/
+
 /***** VARIÁVEL COM O CAMINHO ONDE ESTÃO OS ARQUIVOS *****/
 /*****   VARIABLE WITH THE PATH WHERE THE FILES ARE  *****/
 %let Caminho = /sas/Arquivo;
