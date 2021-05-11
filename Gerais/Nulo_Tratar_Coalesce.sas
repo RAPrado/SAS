@@ -1,5 +1,5 @@
 /***** Selecionar o primeiro valor não nulo em uma lista *****/
-/*****     Select the first non-null value in a list     *****/
+/*****     Select the first non-null value in a list    *****/
 
 /*Referencia : https://www.listendata.com/2016/03/sas-coalesce-function.html */
 
