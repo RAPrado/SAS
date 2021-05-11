@@ -1,3 +1,7 @@
+/*****      COPIA UM ARQUIVO       *****/
+/*****        COPY A FILE          *****/
+
+
 /***** VARIÁVEIS COM OS CAMINHOS DE ORIGEM E DESTINO  *****/
 /***** VARIABLES WITH PATHS OF ORIGIN AND DESTINATION *****/
 %let Origem = /sas/Pasta_A;
