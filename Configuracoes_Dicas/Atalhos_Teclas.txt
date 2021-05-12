@@ -1,0 +1,21 @@
+********** Transformar linha de código em maiúscula/minúscula **********
+********** (Transform line of code to uppercase / lowercase) **********
+Maiúsculo/Upper case: Ctrl + Shift + U
+Minúsculo/Lower case: Ctrl + Shift + L
+
+********** Comentar linha de código **********
+**********   Comment line of code   **********
+Comentar a linha ou linhas selecionadas/Comment out the selected line or lines     : Ctrl + /
+Descomentar a linha ou linhas selecionadas/Uncomment out the selected line or lines: Ctrl + Shift + /
+
+********** Ir para uma linha específica do código **********
+**********      Go to a specific line of code     **********
+Ir para linha/Go to line : Ctrl + G
+
+********** Ativar a opção para ver o número da linha **********
+********** Enable the option to see the line number  **********
+Menu : Program, Editor Options, Show line numbers
+
+**********  Mover o cursor até o final ou começo dos parenteses   **********
+********** Move the cursor to the end or beginning of parentheses **********
+Ctrl + [ ou Ctrl +]
