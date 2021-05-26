@@ -13,5 +13,5 @@ data _null_;
 	put Inicio datetime19.;	*26MAY2021:10:21:29;
 	put Inicio datetime20.1;*26MAY2021:10:21:29.3;
 	put Inicio datetime21.2;*26MAY2021:10:21:29.27;
-	put Inicio datetime21.3;*26MAY2021:10:21:29.27;
+	put Inicio datetime21.3;*26MAY2021:10:21:29.271;
 run;
