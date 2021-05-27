@@ -10,7 +10,6 @@ quit;
 
 %put "Linhas inseridas :&linhas";
 
-
 proc sql;	
 	delete * from tabela;
 
