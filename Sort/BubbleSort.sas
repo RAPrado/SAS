@@ -1,16 +1,16 @@
 /*****  Processo de ordenação usando método do Bubble Sort  *****/
-/*****        Sorting process using Bubble Sort method       *****/
+/*****       Sorting process using Bubble Sort method       *****/
 *Adaptado de : https://www.studytonight.com/data-structures/bubble-sort;
 data _null_;
-	%let linhas = 200; /*Definir aqui o número de posições no Vetor/Define here the number of positions in the Vector;*/
+	%let linhas = 300; /*Definir aqui o número de posições no Vetor/Define here the number of positions in the Vector;*/
 
 	Hora=DATETIME();	
-	put 'Hora inicio: ' Hora datetime21.4;
+	put 'Hora inicio : ' Hora datetime21.4;
 
-	length x $1000;
+	length x $2000;
 	x = '';
 	
-	/*call streaminit(12);*Define a semente do rand/Sets the rand seed;*/
+	*call streaminit(12);/*Define a semente do rand/Sets the rand seed;*/
 	array z{&linhas} Col01-Col&linhas;
 
 	do i=1 to &linhas;
@@ -18,7 +18,7 @@ data _null_;
 	end;
 
 	x = catx('|',of z(*)); *6|7|4|9|5|5|6|3|4|2;
-	put '       Vetor inicial:' x;
+	put 'Vetor inicial:' x;
 
 	%let troca = 0;
 	%let mudou = 0;
@@ -37,9 +37,14 @@ data _null_;
 		if mudou = 0 then leave;
 
 		mudou = 0;
-		x= catx('|',of z(*));	
-		put 'Linha ' j ' Vetor atual:' x;		
+		
+		*Exibe as mudanças feitas ao longo do loop/Shows the changes during the loop;
+/*		x= catx('|',of z(*));	*/
+/*		put 'Linha ' j ' Vetor atual:' x;		*/
 	end;	
+
+	x = catx('|',of z(*));
+	put 'Vetor final  :' x;
 
 	Hora=DATETIME();	
 	put 'Hora término: ' Hora datetime21.4;
