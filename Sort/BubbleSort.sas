@@ -1,5 +1,5 @@
-/*****  Processo de ordenação usando método do Booble Sort  *****/
-/*****        Sorting process using Booble Sort method       *****/
+/*****  Processo de ordenação usando método do Bubble Sort  *****/
+/*****        Sorting process using Bubble Sort method       *****/
 *Adaptado de : https://www.studytonight.com/data-structures/bubble-sort;
 data _null_;
 	%let linhas = 200; /*Definir aqui o número de posições no Vetor/Define here the number of positions in the Vector;*/
