@@ -1,5 +1,5 @@
 /*****  Processo de ordenação usando método do Insert Sort   *****/
-/*****       Sorting process using BubInsertble Sort method  *****/
+/*****       Sorting process using Insert Sort method  *****/
 *Adaptado de : https://www.studytonight.com/data-structures/bubble-sort;
 data _null_;
 	%let linhas = 300; /*Definir aqui o número de posições no Vetor/Define here the number of positions in the Vector;*/
