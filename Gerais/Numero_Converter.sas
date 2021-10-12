@@ -7,6 +7,7 @@
 %let decimal=%SYSEVALF (10.1+20.2); /*Decimal/Float*/
 %put 'decimal:' &decimal;
 
+
 *ou/or;
 proc sql;
 	create table Teste as
