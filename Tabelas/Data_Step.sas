@@ -7,6 +7,7 @@ run;
 *Exemplo 2;
 data Tabela;
    *infile datalines delimiter=',';  *Descomentar essa linha se quiser delimitador entre as colunas;
+   informat Nome $30. Sexo $1.;
    input Nome $ Sexo $ Idade Altura Peso;
    datalines;
    Augusto M 21 1.80 80.3
