@@ -75,5 +75,6 @@ INTCK( interval, date1, date2 )
 retorna o número de limites de intervalos do tipo fornecido que se encontram entre os dois valores de data ou data e hora/returns the number of boundaries of intervals of the given kind that lie between the two date or datetime values.
 
 INTNX( interval, date, n <, 'alignment' > )
+ex. INTNX('MONTH',Campo data,qtd de meses a somar)
 retorna o valor de data ou data e hora do início do intervalo que é n intervalos do intervalo que contém a data ou valor de data e hora fornecidos. O argumento opcional de alinhamento especifica que a data retornada está alinhada com o início, meio ou fim do intervalo. O começo é o padrão/
 returns the date or datetime value of the beginning of the interval that is n intervals from the interval that contains the given date or datetime value. The optional alignment argument specifies that the returned date is aligned to either the beginning, middle, or end of the interval. Beginning is the default.
