@@ -1,7 +1,12 @@
 *Exemplo 1;
 data Tabela;
-   x='December';
-   y=10;
+	Dia=25;
+	Mes='Janeiro';
+	Ano=1554;
+	Aniversario_SP='25jan2022'd;
+	Idade=468;
+
+	FORMAT Aniversario_SP DDMMYY10.;
 run;
 
 *Exemplo 2;
