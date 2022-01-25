@@ -14,6 +14,8 @@ E 33
 ;
 run;
 
+*Tabela de origem deve estar ordenada;
+
 data two;
 /*Add the END= option to facilitate checking for last observation.*/
   set one end=finished;
