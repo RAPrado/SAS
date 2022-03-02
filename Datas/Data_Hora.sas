@@ -4,6 +4,7 @@
 
 data _null_;
 	Inicio=DATETIME();
+	Data_Hora= INPUT(PUT(DATE(),date9.)|| ':00:00:00',DATETIME19.); *Adiciona hora a uma data;
 	
 	put Inicio datetime.;	*26MAY21:10:21:29;
 	put Inicio datetime7.;	*26MAY21;
@@ -14,4 +15,6 @@ data _null_;
 	put Inicio datetime20.1;*26MAY2021:10:21:29.3;
 	put Inicio datetime21.2;*26MAY2021:10:21:29.27;
 	put Inicio datetime21.3;*26MAY2021:10:21:29.271;
+
+	put Inicio datetime19.;*26MAY2021:14:28:37;
 run;
