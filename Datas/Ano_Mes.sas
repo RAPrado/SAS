@@ -1,0 +1,3 @@
+*Retorna ano e mês de uma data no formato YYYY-MM, 2021-12 ou 2022-01;
+
+CATX('-',YEAR(CAMPO_DATA),SUBSTR(CATS('0',MONTH(CAMPO_DATA)),LENGTH(CATS(MONTH(CAMPO_DATA))),2))
