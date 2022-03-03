@@ -1,3 +1,6 @@
+*** Update usando join / Update using join ***;
+*Referencia : https://communities.sas.com/t5/SAS-Procedures/update-statement-inside-a-proc-sql/td-p/47964;
+
 *Método 1;
 PROC SQL;
 	UPDATE LIBNAME.TABELA_A SET
