@@ -1,3 +1,5 @@
+*Referência : https://communities.sas.com/t5/SAS-Procedures/Proc-SQL/td-p/13466?nobounce;
+
 %Macro Export(Status=);
 	Proc SQL;
 		Create Table StatusFound as
