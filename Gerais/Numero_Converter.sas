@@ -1,6 +1,7 @@
 /***** Converte de número para texto ou vice versa *****/
 /***** Converts from number to text *****/
 
+*Dentro de macro, para gravar um número em variável, precisa usar %eval ou %SYSEVALF, do contrário gravará como texto e não fará cálculos;
 %let inteiro=%eval(10+20); /*Inteiro/Interger*/
 %put 'inteiro:' &inteiro;
 
