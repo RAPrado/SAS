@@ -1,0 +1,13 @@
+*Referência : https://support.sas.com/resources/papers/proceedings/proceedings/sugi27/p023-27.pdf;
+
+*opções do compress : yes, char, binary;
+data Tabela_Compactada(compress=yes);
+  set Tabela_Origem;
+run;
+
+*REUSE=. Specifying this option allows SAS to reuse space within the compressed SAS data set that has
+been freed by deleted observations. Otherwise, SAS cannot reclaim the space made available by deleted observations;
+
+data Tabela_Compactada(compress=yes reuse=yes);
+  set Tabela_Origem;
+run;
