@@ -11,6 +11,8 @@ data Teste(keep=Campo1 Campo2 Campo3 Campo4 Campo5);
 
 	Campo4 = catx(',',name,age);/*Usa função Catx para concatenar e acrescenta caracter como separador, e limpa espaço em branco/Uses Catx function to concatenate and add character as separator, and clears white space */
 	Campo5 = catx(',',of name--weight);/*Passa sequência de colunas para concatenar/Pass columns to concatenate*/
+	
+	/*Observacao : Se o valor do campo for nulo em alugma linha da tabela, o catx ignora esse campo naquela linha. Se estiver concatenando três colunas, e uma delas for nula, no resultado só sairá duas colunas, e não três.*/
 run;
 
 /***** Concatenando array ******/
