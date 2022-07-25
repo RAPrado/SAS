@@ -24,3 +24,6 @@ proc sql;
   select CampoA, CampoB
 	from Tab_X (OBS=10)
 quit;
+
+*Referência sobre (OBS=10)
+https://communities.sas.com/t5/SAS-Programming/How-to-select-first-few-records-to-test-the-Proc-sql/td-p/7589;
