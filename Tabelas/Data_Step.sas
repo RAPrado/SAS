@@ -1,12 +1,14 @@
 *Exemplo 1;
 data Tabela;
+	LENGTH Mes $10; /*Define o tamanho desta coluna*/
+	
 	Dia=25;
 	Mes='Janeiro';
 	Ano=1554;
 	Aniversario_SP='25jan2022'd;
 	Idade=468;
 
-	FORMAT Aniversario_SP DDMMYY10.;
+	FORMAT Aniversario_SP DDMMYY10.; /*Define o formato de data a ser usado*/
 run;
 
 *Exemplo 2;
