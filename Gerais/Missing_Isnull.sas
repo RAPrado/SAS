@@ -7,3 +7,11 @@ proc sql;
 	from tabela
     where missing(campo_b);
 quit;
+
+
+proc sql;
+	create table Teste as
+	select campo_a
+	from tabela
+    where isnull(campo_b);
+quit;
