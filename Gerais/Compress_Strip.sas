@@ -8,7 +8,7 @@ data _null_;
     text = '  AB   CºDªE  F   ';
     trim = '*'||trim(text)||'*';         *Remove os espaços em braco a direita;
     compress = '*'||compress(text)||'*'; *Remove todos os espaços em braco;
-    limpar = '*'||compress(text,"AÁÀÂÃBCÇDEÉÊFGHIÍJKLMNOÓÕPQRSTUÚVWXYZ1234567890 ","k")||'*'; *Manterá apenas os caracteres informados no parâmetro;
+    limpar = '*'||compress(text,"AÁÀÂÃÄBCÇDEÉÈÊËFGHIÍÌÎÏJKLMNÑOÓÒÕÖPQRSTUÚÙÜVWXYÝZ1234567890 ","k")||'*'; *Manterá apenas os caracteres informados no parâmetro;
     strip = '*'||strip(text)||'*';       *Remove os espaços em braco a esquerda e a direita;
     put trim;
     put compress;
