@@ -1,4 +1,17 @@
-*Referência : https://communities.sas.com/t5/SAS-Procedures/Proc-SQL/td-p/13466?nobounce;
+*call symput usado para gravar um valor em uma variável, e depois usar fora de um data step ou macro;
+*Exemplo 1
+Referencia : https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/mcrolref/p09y28i2d1kn8qn1p1icxchz37p3.htm;
+
+data x;
+   x='December';
+   call symput('var',x);
+proc print;
+title "Report for &var";
+run;
+
+
+**Exemplo 2
+Referência : https://communities.sas.com/t5/SAS-Procedures/Proc-SQL/td-p/13466?nobounce;
 
 %Macro Export(Status=);
 	Proc SQL;
