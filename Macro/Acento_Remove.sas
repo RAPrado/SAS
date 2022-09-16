@@ -46,5 +46,8 @@ create table teste1 as
 select
 	campo,
   	%Acento_Remove(campo) as campo_trat
-from teste;
+	
+	/*%Acento_Remove(a.campo) as campo_trat1*/ /*Não funciona se passar a. no parametro*/
+	/*coalesce(%Acento_Remove(campo),'null') as campo_trat2*/ /*Não funciona se chamar outra função antes da macro*/
+from teste as a;
 quit;
