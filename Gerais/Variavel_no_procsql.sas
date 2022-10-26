@@ -1,3 +1,4 @@
+********** EXEMPLLO 1 **********;
 %Let Variavel_A = 'Situação de teste ';
 %put &Var_Where; *Imprime o conteúdo da variável no log;
 
@@ -9,4 +10,18 @@ proc sql;
 		  '03. ' || &Variavel_A || ' restantes.'
 	end end as Situacao
 	from Tabela_B	
+quit;
+
+
+********** EXEMPLLO 2 **********;
+proc sql;
+	select campoB,campoC
+	into :par_B,:par_C
+	from tabelaA;
+quit;
+
+proc sql;
+	select campoA
+	from tabelaB
+	where campoB="&par_B" and campoC="&par_C";
 quit;
