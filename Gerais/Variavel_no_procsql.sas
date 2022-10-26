@@ -23,5 +23,5 @@ quit;
 proc sql;
 	select campoA
 	from tabelaB
-	where campoB="&par_B" and campoC="&par_C";
+	where campoB="&par_B" and campoC="&par_C"; /*A variável de parêmtro tem que ficar entre aspas e não apostrofe*/
 quit;
