@@ -1,6 +1,6 @@
 ********** EXEMPLLO 1 **********;
 %Let Variavel_A = 'Situação de teste ';
-%put &Var_Where; *Imprime o conteúdo da variável no log;
+%put &Variavel_A; *Imprime o conteúdo da variável no log;
 
 proc sql;
 	create table Tabela as
@@ -14,6 +14,18 @@ quit;
 
 
 ********** EXEMPLLO 2 **********;
+%Let Variavel_A = 'teste';
+%put &Variavel_A; *Imprime o conteúdo da variável no log;
+
+proc sql;
+	create table Tabela as
+	select campoa1
+	from Tabela_B
+	where campo2 = "&Variavel_A" /*Variável deve ficar entre ASPAS, pois o campo é string.*/
+quit;
+
+
+********** EXEMPLLO 3 **********;
 proc sql;
 	select campoB,campoC
 	into :par_B,:par_C
