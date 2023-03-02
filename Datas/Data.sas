@@ -10,7 +10,9 @@ proc sql;
 	today() as Campo_Data3 format date9.,   /*26MAY2021*/
 	today() as Campo_Data4 format ddmmyy10.,/*21/05/2021*/
 	today() as Campo_Data5 format yymmdd10.,/*2021-05-26*/
-	today() as Campo_Data6 format date11.   /*26-MAY-2021*/
+	today() as Campo_Data6 format date11.,   /*26-MAY-2021*/
+	
+	date() as Campo_Data7 format=ddmmyy10. /*02/03/2023*/
     from tabela;
 quit;
 
