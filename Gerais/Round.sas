@@ -14,4 +14,6 @@ data round;
    campo8=round(original, .00001);*   original;
    campo9=round(original, .1111);*    1234.5432;
    campo10 = round(original, .11111);*1234.54321; 
+   
+   campo11 = int(original);         *1234; 
 run;
