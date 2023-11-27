@@ -1,6 +1,7 @@
 *Referência : https://support.sas.com/kb/24/802.html;
 
 /* Method 1:  Using PROC SURVEYSELECT                                */
+/* Example 1                                                         */
 /*                                                                   */
 /* Use METHOD=URS.  N= is the number of observations to select.  The */
 /* sample is stored in the OUT= data set, SAMPLE.                    */
@@ -17,7 +18,22 @@ title "Method 1: PROC SURVEYSELECT ";
 proc print;
 run;
 
+/* Example 2                              */
+proc surveyselect
+   data= st192.cars      /* sample from data table */
+   seed=31475            /* If no SEED option is specified, SAS uses the system time as its seed value. This creates a different random sample every time the procedure is run. */
+   method=srs            /* For simple random sampling without replacement, use METHOD=SRS. For simple random sampling with replacement, use METHOD=URS. For other selection methods and details on sampling algorithms, see the SAS online documentation for PROC SURVEYSELECT. */
+   sampsize=12           /* sample size */
+   out=work.CarSample12; /* sample stored in this data set */
+run;
 
+/* Example 3 - shows how to select a certain percentage of the original sample using the SAMPRATE= option.*/
+proc surveyselect data=Statdata.cars    /* sample from data table */
+                  seed=13094425         /* recommended that you use this option */
+                  method=srs            /* simple random sample */
+                  samprate=0.05         /* 0 < sampling rate < 1 */
+                  out=work.cars12pc;    /* sample stored in this data set */
+run;  
 
 
 /* Method 2:  Using SAS DATA Step                                   */
