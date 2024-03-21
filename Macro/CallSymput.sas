@@ -10,7 +10,18 @@ title "Report for &var";
 run;
 
 
-**Exemplo 2
+*Exemplo 2
+%let Data_Inicio ='01feb2024'd;
+
+data _null_;	
+  Data_Calculada=INTNX('month', &Data_Inicio,-6,'same'); /*subtrai 6 meses da data*/
+  call symput('Data_Calculada',Data_Calculada);
+run;
+
+%put Data_Calculada=&Data_Calculada;
+
+
+**Exemplo 3
 Referência : https://communities.sas.com/t5/SAS-Procedures/Proc-SQL/td-p/13466?nobounce;
 
 %Macro Export(Status=);
