@@ -16,8 +16,9 @@ DATA Arquivo;
 	format VAR1 $CHAR10. VAR2 BEST6.;	
 	informat VAR1 $CHAR10. VAR2 BEST6.;
 
-    INFILE "\\servidor\pasta\arquivo.txt" 
-    DLM=';';
+    INFILE "\\servidor\pasta\arquivo.txt"
+    /*ENCODING='Windows-1252' TERMSTR=CRLF */ /*another possible parameters*/
+    DSD DLM=';';
 
 	INPUT
          VAR1     : $CHAR10.
