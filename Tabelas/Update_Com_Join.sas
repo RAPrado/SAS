@@ -1,7 +1,16 @@
 *** Update usando join / Update using join ***;
 *Referencia : https://communities.sas.com/t5/SAS-Procedures/update-statement-inside-a-proc-sql/td-p/47964;
 
-*Método 1;
+*Método 1 - Estático;
+PROC SQL;
+	UPDATE LIBNAME.TABELA_A SET
+	CAMPO_A='S',CAMPO_b=10
+	WHERE ID=1234;
+
+	%let linhas=&sqlobs;
+QUIT;
+
+*Método 2 - usando join;
 PROC SQL;
 	UPDATE LIBNAME.TABELA_A SET
 	CAMPO_A='fixo'
@@ -10,7 +19,7 @@ PROC SQL;
 	%let linhas=&sqlobs;
 QUIT;
 
-*Método 2;
+*Método 3 - uando join para várias colunas;
 PROC SQL;
 	UPDATE LIBNAME.TABELA_A TABELA_B
 	SET CAMPO_A = (select CAMPO_A FROM TABELA_B WHERE TABELA_B.ID = TABELA_A.ID),
